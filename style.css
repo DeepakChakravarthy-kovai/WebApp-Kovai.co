@@ -1,0 +1,35 @@
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+body.dark-mode a {
+  color: #111;
+}
+body.dark-mode button {
+  background-color: rgb(163, 149, 149);
+  color: #111;
+}
+
+body.light-mode {
+  background-color: rgb(150, 143, 143);
+  color: #111;
+}
+body.light-mode a {
+  color: #111;
+}
+body.light-mode button {
+  background-color: #111;
+  color: #eee;
+}
+h1{
+    color: rgb(245, 245, 245);
+    text-align: center;
+}
+h2{
+    color:rgba(235, 90, 32, 0.548);
+    text-align: center;
+}
+a{
+    color:chocolate;
+    text-align: center;
+}

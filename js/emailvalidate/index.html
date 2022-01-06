@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email validation</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Email validation</h1>
+  email id : <input id="email" name="email" type="text"> <br><br>
+  <button onclick="validate()">validate</button>
+  <br><br>
+  <div id="result"></div>
+</body>
+<script>
+  var emailvalidate = new RegExp(/^\S+@\S+\.\S+$/);
+
+  function validate() {
+    var uservalue = document.getElementById('email').value;
+    console.log(uservalue);
+    if (emailvalidate.test(uservalue)) {
+      console.log("correct");
+      document.getElementById('result').innerText = `E-mail Id is Valid`
+    } else {
+      console.log("incorrect");
+      window.alert("Invalid Email ID")
+      document.getElementById('result').innerHTML = `<h1 style="color:red">Invalid E-mail. Please provide a valid E-mail id</h1>`
+
+    }
+
+  }
+</script>
+
+</html>
